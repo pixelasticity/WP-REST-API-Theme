@@ -1,9 +1,7 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
-
-_s
+WP REST API Theme
 ===
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Hi. I'm a starter theme called `WP REST API Theme`. I was forked from `_s` and integrated with Vue.js 2.0. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
 
@@ -20,23 +18,21 @@ My ultra-minimal CSS might make me look like theme tartare but that means less s
 Getting Started
 ---------------
 
-If you want to keep it simple, head over to http://underscores.me and generate your `_s` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
+If you want to set things up manually, download `wp-rest-api-theme` from GitHub. The first thing you want to do is copy the `wp-rest-api-theme` directory and change the name to something else (like, say, `megatherium`), and then you'll need to do a five-step find and replace on the name in all the templates.
 
-If you want to set things up manually, download `_s` from GitHub. The first thing you want to do is copy the `_s` directory and change the name to something else (like, say, `megatherium`), and then you'll need to do a five-step find and replace on the name in all the templates.
-
-1. Search for `'_s'` (inside single quotations) to capture the text domain.
+1. Search for `'wp-rest-api-theme'` (inside single quotations) to capture the text domain.
 2. Search for `_s_` to capture all the function names.
-3. Search for `Text Domain: _s` in style.css.
-4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks.
-5. Search for `_s-` to capture prefixed handles.
+3. Search for `Text Domain: wp-rest-api-theme` in style.css.
+4. Search for <code>&nbsp;wp-rest-api-theme</code> (with a space before it) to capture DocBlocks.
+5. Search for `wp-rest-api-theme-` to capture prefixed handles.
 
 OR
 
-* Search for: `'_s'` and replace with: `'megatherium'`
+* Search for: `'wp-rest-api-theme'` and replace with: `'megatherium'`
 * Search for: `_s_` and replace with: `megatherium_`
-* Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
-* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium</code>
-* Search for: `_s-` and replace with: `megatherium-`
+* Search for: `Text Domain: wp-rest-api-theme` and replace with: `Text Domain: megatherium` in style.css.
+* Search for: <code>&nbsp;wp-rest-api-theme</code> and replace with: <code>&nbsp;Megatherium</code>
+* Search for: `wp-rest-api-theme-` and replace with: `megatherium-`
 
 Then, update the stylesheet header in `style.css` and the links in `footer.php` with your own information. Next, update or delete this readme.
 

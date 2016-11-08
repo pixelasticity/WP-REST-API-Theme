@@ -64,7 +64,7 @@ get_header(); ?>
 					<div class="entry-meta">
 						<span class="posted-on">Posted on 
 							<a :href="post.link" rel="bookmark">
-								<time class="entry-date" :datetime="post.date_gmt">{{ post.date }}</time></a>
+								<time class="entry-date" :datetime="post.date_gmt">{{ post.date | formatDate(this) }}</time></a>
 						</span>
 						<span class="byline">by 
 							<span class="author vcard">

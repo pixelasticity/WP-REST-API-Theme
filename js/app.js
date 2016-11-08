@@ -22,6 +22,23 @@
 				});
 			}
 		},
+		filters: {
+			formatDate: function (isoDate) {
+				var lang = ["en-US"], //using an array because of quirk in Chrome
+					date = new Date(isoDate),
+					options = {
+						weekday: undefined,
+						year: "numeric",
+						month: "long",
+						day: "numeric"
+					},
+					result;
+
+				result = date.toLocaleDateString(lang, options);
+				console.log(result);
+				return result;
+			}
+		},
 		mounted: function () {
 			this.$nextTick(function () {
 				this.getPosts();

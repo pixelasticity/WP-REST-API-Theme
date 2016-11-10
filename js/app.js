@@ -60,8 +60,11 @@
 		routes: routes,
 		mode: 'history'
 	});
+	
+	// 4. Create a central events instance.
+	var bus = new Vue();
 
-	// 4. Create and mount the root instance.
+	// 5. Create and mount the root instance.
 	// Make sure to inject the router with the router option to make the
 	// whole app router-aware.
 	var app = new Vue({
@@ -74,12 +77,9 @@
 		},
 		methods: {
 			updateTitle: function (pageTitle) {
-				document.title = (pageTitle ? pageTitle + ' - ' : '') + wp.site_name;
-			}
-		},
-		events: {
-			'page-title': function (pageTitle) {
-				this.updateTitle(pageTitle);
+				bus.$on('page-title', function (pageTitle) {
+					document.title = (pageTitle ? pageTitle + ' - ' : '') + wp.site_name;
+				});
 			}
 		}
 	}).$mount('#app');

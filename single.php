@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package _s
+ * @package WP_REST_API_Theme
  */
 
 get_header(); ?>
@@ -28,6 +28,9 @@ get_header(); ?>
 		?>
 
 		</main><!-- #main -->
+		<main id="app" class="site-main" role="main">
+			<router-view></router-view>
+		</main><!-- #app -->
 	</div><!-- #primary -->
 
 <?php

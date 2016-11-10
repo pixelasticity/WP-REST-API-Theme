@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package _s
+ * @package WP_REST_API_Theme
  */
 
 get_header(); ?>
